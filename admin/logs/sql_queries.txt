@@ -1,0 +1,271 @@
+
+ dominus executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('testuser01', 'bdba24a422f7992d4a24301f84cc6649', 'kkosnull@gmail.com', 'kkosnull@gmail.com','Greece', 
+1, '', 'kostas kostakis',
+'', '',  '0', 
+'0', CURDATE(), '2015-10-23', 1, '0', '0', 1, 0 )
+ -------------------------------------------------------------------------------
+ On Thursday 23rd of October 2014 10:58:13 AM---dominus executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('testuser02', 'bdba24a422f7992d4a24301f84cc6649', '', '','Greece', 
+1, '', 'test',
+'', '',  '0', 
+'0', CURDATE(), '2015-10-23', 1, '0', '0', 1, 0 )
+ -------------------------------------------------------------------------------
+ On Thursday 23rd of October 2014 11:27:23 AM---dominus executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('user01732', 'fac17dca105bd3b87c6b868f3f74a6e8', '', '','Greece', 
+1, '', 'ΑΚΡΙΔΑΣ ΔΗΜΗΤΡΙΟΣ',
+'', 'Θ.ΒΡΕΣΘΕΝΗΣ 49, Ν.ΚΟΣΜΟΣ',  '2109236805', 
+'0', CURDATE(), '2015-10-23', 1, '2109236805', '0', 1, 0 )
+ -------------------------------------------------------------------------------
+ On Thursday 23rd of October 2014 11:29:28 AM---dominus executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('user07871', 'd7cf20fdbd09cf0e08580e6c850f9a87', '', '','Greece', 
+1, '', 'ΑΛΕΒΙΖΟΠΟΥΛΟΣ ΑΝΔΡ. ΓΕΩΡΓΙΟΣ',
+'', 'ΠΕΙΡΑΙΩΣ 34  ΜΟΣΧΑΤΟ',  '210 4819763', 
+'0', CURDATE(), '2015-10-23', 1, '210 4819763', '0', 1, 0 )
+ -------------------------------------------------------------------------------
+ On Thursday 23rd of October 2014 11:30:44 AM---dominus executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('user00820', '21be805ac7c3838282cb8d6f228c1538', '', '','Greece', 
+1, '', 'ΒΡΟΝΤΟΣ ΜΙΧΑΗΛ & ΣΙΑ ΕΕ',
+'', 'ΠΛΑΤΑΙΩΝ 32  ΚΟΡΥΔΑΛΛΟΣ',  '2105696095', 
+'0', CURDATE(), '2015-10-23', 1, '2105696095', '0', 1, 0 )
+ -------------------------------------------------------------------------------
+ On Thursday 23rd of October 2014 11:32:17 AM---dominus executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('user03789', '35fbbcd96d53669fc476cf1790c1d9cf', '', '','Greece', 
+1, '', 'ΔΟΥΛΤΣΙΝΟΣ ΣΤΑΥΡΟΣ',
+'', 'ΜΕΣΟΛΟΓΓΙΟΥ 19  ΑΛΙΜΟΣ',  '2109955603', 
+'0', CURDATE(), '2015-10-23', 1, '2109955603', '0', 1, 0 )
+ -------------------------------------------------------------------------------
+ On Thursday 23rd of October 2014 11:33:52 AM---dominus executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('user01713', '19fc7cb8001eeadfbce63cca011d65e5', '', '','Greece', 
+1, '', 'ΘΕΟΦΙΛΟΥ ΙΩΑΝΝΗΣ',
+'', 'ΜΙΚΡΑΣ ΑΣΙΑΣ 29-33   ΒΥΡΩΝΑΣ',  '210 76 47 700', 
+'0', CURDATE(), '2015-10-23', 1, '210 76 47 700', '6976892929', 1, 0 )
+ -------------------------------------------------------------------------------
+ On Thursday 23rd of October 2014 11:34:44 AM---dominus executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('user04881', '9ff9afb0eb47f3f74556a66a69fb1534', '', '','Greece', 
+1, '', 'ΤΣΕΛΟΥΔΗΣ ΧΑΡ. ΒΑΣΙΛΕΙΟΣ',
+'', 'ΚΩΝ/ΠΟΛΕΩΣ 194 & ΚΑΡΑΜΑΝΛΗ   ΑΧΑΡΝΕΣ',  '2102467757', 
+'0', CURDATE(), '2015-10-23', 1, '2102467757', '6977294776', 1, 0 )
+ -------------------------------------------------------------------------------
+ On Thursday 23rd of October 2014 11:35:42 AM---dominus executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('user06106', '93e65baa924e5f7d26bfb6c82ea1ee1e', '', '','Greece', 
+1, '', 'ΧΑΛΑΡΗΣ ΕΛΕΥΘ. ΜΑΡΚΟΣ',
+'', 'ΕΥΔΟΞΟΥ 10    ΑΘΗΝΑ',  '2109230439', 
+'0', CURDATE(), '2015-10-23', 1, '2109230439', '6948686117', 1, 0 )
+ -------------------------------------------------------------------------------
+ On Thursday 23rd of October 2014 11:36:24 AM---dominus executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('user07807', '4a0f9555b7a625985296ada73ba8b00f', '', '','Greece', 
+1, '', 'ΑΘΑΝΑΣΟΠΟΥΛΟΣ ΓΕΩΡΓΙΟΣ',
+'', 'ΑΡΚΑΔΙΟΥ 31  ΚΑΜΑΤΕΡΟ',  '0', 
+'0', CURDATE(), '2015-10-23', 1, '0', '6972712570', 1, 0 )
+ -------------------------------------------------------------------------------
+ On Monday 27th of October 2014 11:03:20 AM---admin executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('kranguser', 'c3b5d5a31bd1fa5de6e151b1e02c2a8b', 'kranakisservice@hotmail.com', 'kranakisservice@hotmail.com','Greece', 
+1, '', 'ΚΡΑΝΑΚΗΣ ΓΕΩΡΓΙΟΣ',
+'', 'ΔΑΦΝΗ - ΠΑΠΑΝΑΣΤΑΣΙΟΥ 50',  '2109719280', 
+'0', CURDATE(), '2015-10-27', 1, '2109719280', '6974650052', 1, 0 )
+ -------------------------------------------------------------------------------
+ On Wednesday 29th of October 2014 09:21:21 AM---admin executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('thlemuser', 'bdba24a422f7992d4a24301f84cc6649', '', '','Greece', 
+1, '', 'Τηλέμαχος',
+'', 'oak street',  '0', 
+'0', CURDATE(), '2015-10-29', 1, '0', '0', 1, 0 )
+ -------------------------------------------------------------------------------
+ On Wednesday 29th of October 2014 09:22:02 AM---admin executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('popiuser', 'bdba24a422f7992d4a24301f84cc6649', '', '','Greece', 
+1, '', 'Πόπη',
+'', 'oak street',  '0', 
+'0', CURDATE(), '2015-10-29', 1, '0', '0', 1, 0 )
+ -------------------------------------------------------------------------------
+ On Wednesday 29th of October 2014 09:26:30 AM---admin executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('ntinauser', 'bdba24a422f7992d4a24301f84cc6649', '', '','Greece', 
+1, '', 'Κωνσταντίνα',
+'', 'oak street',  '0', 
+'0', CURDATE(), '2015-10-29', 1, '0', '0', 1, 0 )
+ -------------------------------------------------------------------------------
+ On Wednesday 29th of October 2014 09:31:24 AM---admin executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('dikaiosuser', 'bdba24a422f7992d4a24301f84cc6649', '', '','Greece', 
+1, '', 'Δικαίος',
+'', 'oak street',  '0', 
+'0', CURDATE(), '2015-10-29', 1, '0', '0', 1, 0 )
+ -------------------------------------------------------------------------------
+ On Wednesday 29th of October 2014 09:34:41 AM---admin executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('panaguser', 'bdba24a422f7992d4a24301f84cc6649', '', '','Greece', 
+1, '', 'Παναγιώτης',
+'', 'oak street',  '0', 
+'0', CURDATE(), '2015-10-29', 1, '0', '0', 1, 0 )
+ -------------------------------------------------------------------------------
+ On Wednesday 29th of October 2014 09:35:01 AM---admin executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('sakisuser', 'bdba24a422f7992d4a24301f84cc6649', '', '','Greece', 
+1, '', 'Σάκης',
+'', 'oak street',  '0', 
+'0', CURDATE(), '2015-10-29', 1, '0', '0', 1, 0 )
+ -------------------------------------------------------------------------------
+ On Wednesday 29th of October 2014 09:35:34 AM---admin executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('mixailuser', 'bdba24a422f7992d4a24301f84cc6649', '', '','Greece', 
+1, '', 'Μιχαηλίδης',
+'', 'oak street',  '0', 
+'0', CURDATE(), '2015-10-29', 1, '0', '0', 1, 0 )
+ -------------------------------------------------------------------------------
+ On Wednesday 29th of October 2014 09:36:08 AM---admin executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('giannisuser', 'bdba24a422f7992d4a24301f84cc6649', '', '','Greece', 
+1, '', 'Γιάννης',
+'', 'oak street',  '0', 
+'0', CURDATE(), '2015-10-29', 1, '0', '0', 1, 0 )
+ -------------------------------------------------------------------------------
+ On Wednesday 29th of October 2014 09:36:32 AM---admin executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('pavlosuser', 'bdba24a422f7992d4a24301f84cc6649', '', '','Greece', 
+1, '', 'Παύλος',
+'', 'oak street',  '0', 
+'0', CURDATE(), '2015-10-29', 1, '0', '0', 1, 0 )
+ -------------------------------------------------------------------------------
+ On Wednesday 29th of October 2014 09:36:57 AM---admin executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('apostolosuser', 'bdba24a422f7992d4a24301f84cc6649', '', '','Greece', 
+1, '', 'Απόστολος',
+'', 'oak street',  '0', 
+'0', CURDATE(), '2015-10-29', 1, '0', '0', 1, 0 )
+ -------------------------------------------------------------------------------
+ On Wednesday 29th of October 2014 09:37:18 AM---admin executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('aggelosuser', 'bdba24a422f7992d4a24301f84cc6649', '', '','Greece', 
+1, '', 'Άγγελος',
+'', 'oak street',  '0', 
+'0', CURDATE(), '2015-10-29', 1, '0', '0', 1, 0 )
+ -------------------------------------------------------------------------------
+ On Wednesday 29th of October 2014 12:24:31 PM---admin executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('user00305', 'f2c857b50bd4dee6fb84427c0fb6a335', '', '','Greece', 
+1, '', 'ΔΙΑΜΑΝΤΟΠΟΥΛΟΣ ΙΩΑΝΝΗΣ',
+'', 'ΠΟΝΤΟΥ 19',  '2109848171', 
+'0', CURDATE(), '2015-10-29', 1, '2109848171', '6977863542', 1, 0 )
+ -------------------------------------------------------------------------------
+ On Wednesday 29th of October 2014 01:31:08 PM---admin executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('autoforakias', 'bdba24a422f7992d4a24301f84cc6649', '', '','Greece', 
+1, '', 'kostas',
+'', '',  '0', 
+'0', CURDATE(), '2015-10-29', 1, '0', '0', 1, 0 )
+ -------------------------------------------------------------------------------
+ On Wednesday 29th of October 2014 05:22:58 PM---admin executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('zoubourlis', '84bf549efc67bdc993e2cb5c8385d565', 'Δ/Α', 'Δ/Α','Greece', 
+1, '', 'ΖΟΥΜΠΟΥΡΛΗΣ ΓΕΩΡΙΟΣ',
+'', 'ΔΕΡΒΕΝΑΚΙΩΝ 53',  '2105749494', 
+'2105749494', CURDATE(), '2015-10-29', 1, '2105749494', 'Δ/Α', 1, 0 )
+ -------------------------------------------------------------------------------
+ On Thursday 30th of October 2014 01:04:20 PM---admin executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('sesymasmenos', 'bdba24a422f7992d4a24301f84cc6649', '', '','Greece', 
+1, '', 'thlemaxos lefkaros',
+'', '',  '0', 
+'0', CURDATE(), '2015-10-30', 1, '0', '0', 1, 0 )
+ -------------------------------------------------------------------------------
+ On Thursday 30th of October 2014 03:22:15 PM---admin executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('user_663', '27a6caa24d12ceb4ef9d787eeedb229a', '', '','Greece', 
+1, '', 'user_663',
+'', '',  '0', 
+'0', CURDATE(), '2015-10-30', 1, '0', '0', 1, 0 )
+ -------------------------------------------------------------------------------
+ On Thursday 30th of October 2014 03:43:32 PM---admin executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('user_664', '2ca95df3498038135fa50f1bb8d93335', '', '','Greece', 
+1, '', 'user_664',
+'', '',  '0', 
+'0', CURDATE(), '2015-10-30', 1, '0', '0', 1, 0 )
+ -------------------------------------------------------------------------------
+ On Friday 31st of October 2014 09:21:08 AM---admin executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('mrbean', 'bdba24a422f7992d4a24301f84cc6649', '', '','Greece', 
+1, '', 'rowan atkinson',
+'', '',  '0', 
+'0', CURDATE(), '2015-10-31', 1, '0', '0', 1, 0 )
+ -------------------------------------------------------------------------------
+ On Friday 13th of February 2015 02:30:52 PM---gorgoroth executed >>INSERT INTO `helpdesk`.`users`  (`username`, `password`,`email`,`receivemail`,`country`,
+				`accounttype`, `position`, `comp_name`, `comp_manager`, `comp_adress`, `comp_phone`, 
+				`comp_fax`, `datecreate`, `dateend`, `active`, `phone`, `mobile`, `chat`, `admin`)
+VALUES 
+('rigakos', 'b5dda611907019194ec409874910a866', '', '','Greece', 
+1, '', 'Rigakos Dimitrios',
+'', '',  '0', 
+'0', CURDATE(), '2016-02-13', 1, '0', '0', 1, 0 )
+ -------------------------------------------------------------------------------

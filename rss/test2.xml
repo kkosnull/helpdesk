@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<channel>
+<item>
+<title>title1</title>
+<link>
+http://www.npr.org/templates/story/story.php?storyId=1026
+</link>
+<description>
+NPR coverage of space exploration, space shuttle missions, news from NASA, private space exploration, satellite technology, and new discoveries in astronomy and astrophysics.
+</description>
+</item>
+
+<item>
+<title>title2</title>
+<link>
+http://www.npr.org/templates/story/story.php?storyId=1026
+</link>
+
+<description>
+NPR coverage of space exploration, space shuttle missions, news from NASA, private space exploration, satellite technology, and new discoveries in astronomy and astrophysics.
+</description>
+</item>
+
+<item>
+<title>το νέο h2-turbocharged της kawasaki</title>
+<link>
+http://www.bikeit.gr/new-models/kawasaki/5637-nea-montela-2015-kawasaki-ninja-h2-photos.html
+</link>
+<img>
+http://zeromod.eu/rss/h2_front.jpg
+</img>
+<description>
+MOUNARA!!!!!
+</description>
+</item>
+
+</channel>

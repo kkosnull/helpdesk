@@ -1,0 +1,53 @@
+<script>
+var IDLE_TIMEOUT_HOME = 20; //seconds
+var _idleSecondsCounter_home = 0;
+document.onclick = function() {
+    _idleSecondsCounter_home = 0;
+};
+document.onmousemove = function() {
+    _idleSecondsCounter_home = 0;
+};
+document.onkeypress = function() {
+    _idleSecondsCounter_home = 0;
+};
+window.setInterval(CheckIdleTime_home, 1000);
+
+function CheckIdleTime_home() {
+    _idleSecondsCounter_home++;
+   // var oPanel = document.getElementById("SecondsUntilExpire");
+   // if (oPanel)
+   //     oPanel.innerHTML = (IDLE_TIMEOUT - _idleSecondsCounter) + "";
+    if (_idleSecondsCounter_home >= IDLE_TIMEOUT_HOME) {
+
+       window.open("matrix.html", "_self" );
+    }
+	else {
+	
+	}
+}
+document.write(
+"<div style='text-align:justify; width:80%; height:70%; line-height:1.3em; margin-bottom:10px;margin-top:0px;"+
+"border: 0px solid #FF6600;"+
+ "padding:80px;"+
+ "box-shadow: 0px 0px 0px 15px rgba(0, 0, 0, 0.3), "+
+             "0px 20px 15px 0px rgba(0, 0, 0, 0.6); "+
+			 "background-color: rgba(0,0,0,0.4);"+
+			 
+			" margin-left:auto;"+
+			" margin-right:auto'>"+
+
+"<font style='font-size:2em;font-weight:bold;'>K</font><font style='font-weight:bold;'>αλώς ορίσατε στο διαδικτυακό κόμβο τεχνικών συμβουλών και "+
+"άμεσης τεχνικής πληροφόρησης της εταιρείας ANIP.</font><br>"+
+"Τέλος στην αβεβαιότητα και το άγχος της βλάβης!<br>"+
+ "24 ΩΡΕΣ Τεχνική Υποστήριξη στα Ελληνικά!"+
+ 
+ "<h3>Πάνω από 25000 βλάβες </h3>"+
+	"<div id='list2'>"+
+		"<ol>"+
+			"<li><p><em>Κωδικοί Βλαβών – Επεξήγηση και ανάλυση</em> </p></li>"+
+			"<li><p><em>Πιθανές αιτίες εμφάνισης βλαβών</em> </p></li>"+
+			"<li><p><em>Προτεινόμενοι τρόποι επίλυσης Τεχνικών προβλημάτων</em> </p></li>"+
+			"<li><p><em>Ζωντανή συνομιλία με τους ανθρώπους της Τεχνικής Υποστήριξης</em> </p></li>"+
+		"</ol>"+
+	"</div></div>");
+</script>

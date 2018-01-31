@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, charset=UTF-8"  >
+
+
+
+<link rel="stylesheet" href="style_web.css">
+<script src="jquery-1.11.1.min.js"></script>
+<script src="jquery.mobile-1.4.4.min.js"></script>
+</head>
+<style type="text/css">
+body {
+    background: url(images/overlay1.png);
+    background-repeat:repeat-y;
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:100% 100%;
+}
+.ui-page {
+    background: transparent;
+}
+.ui-content{
+    background: transparent;
+}
+
+</style>
+<body>
+
+<div data-role="page" id="pageone" data-theme="b">
+  <div data-role="header">
+    <h1><img src="images/helpdesk_logo.png" style="width:150px; height:auto;"></h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+  
+     <a href="helpdesk.html" class="ui-btn" rel="external">ΕΠΙΣΤΡΟΦΗ</a>
+	 <a href="#pagetwo" class="ui-btn">Καταγεγραμμένες βλάβες</a>
+  </div>
+
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>
+</div> 
+
+<div data-role="page" id="pagetwo" data-theme="b">
+  <div data-role="header">
+    <h1><img src="images/helpdesk_logo.png" style="width:130px; height:auto;"></h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p><h2>Καταγεγραμμένες βλάβες</h2></p>
+    <a href="helpdesk.html" class="ui-btn" rel="external">ΕΠΙΣΤΡΟΦΗ</a>
+  </div>
+  
+   <script src="models.json"></script>
+   <script src="defects.json"></script>
+<script>
+
+var select_model="<select name='brands_select' id='brands_select' style='overflow:hidden;width:100%; padding:10px;' >";
+for (var i = 0; i < models.length; i++){
+  
+  select_model=select_model+"<option value='"+models[i].modelid+"'>"+models[i].brand+" ΜΟΤΕΛΟ : "+models[i].model+", ΚΩΔ. ΚΙΝΗΤΗΡΑ : "+models[i].engine_serial+", ΚΑΤΗΓΟΡΙΑ :"+models[i].system+"</option>"
+ 
+}
+select_model=select_model+"</select><input type='button' value='ΑΝΑΖΗΤΗΣΗ' onclick='search_val_defect()'>";
+
+
+// search function for defects
+
+var needle_defect;
+function search_val_defect(){
+//needle_defect=document.getElementById("searchbox_manufact").value;
+
+var select_model = document.getElementById("brands_select");
+var model_id = select_model.options[select_model.selectedIndex].value;
+
+for (var i = 0; i < defects.length; i++){
+  // look for the entry with a matching `code` value
+  if (defects[i].model_id == model_id){
+ //alert(defects[i].description);
+  document.getElementById("result_defects").innerHTML="BΛΑΒΗ : "+defects[i].title+"<hr>ΑΙΤΙΑ : "+defects[i].cause+"<hr> ΛΥΣΗ : "+defects[i].description;
+ 
+     // we found it
+    // obj[i].name is the matched result
+  }
+}
+
+}
+
+// iterate over each element in the array
+
+</script>
+
+   <div data-role="main" class="ui-content" >
+   <script>
+document.write(select_model);
+</script>
+
+</div>
+<div data-role="main" class="ui-content" >
+<div style="background:#1A1A1A;margin-top:25px; height:100%;padding:5px;" id="defects_div">
+
+<div id="result_defects"  style="color:#FFF;font-family: 'Ubuntu Mono';">Περιγραφή  βλάβης </div>
+
+</div>	
+</div>
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>
+</div> 
+
+
+
+
+
+
+</body>
+</html>

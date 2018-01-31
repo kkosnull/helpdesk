@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="text/html; width=device-width; initial-scale=1; charset=utf-8" http-equiv="Content-Type" >
+
+
+<link rel="stylesheet" href="style_web.css">
+<script src="jquery-1.11.1.min.js"></script>
+<script src="jquery.mobile-1.4.4.min.js"></script>
+</head>
+<style type="text/css">
+body {
+    background: url(images/overlay1.png);
+    background-repeat:repeat-y;
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:100% 100%;
+}
+.ui-page {
+    background: transparent;
+}
+.ui-content{
+    background: transparent;
+}
+
+</style>
+<body>
+
+<div data-role="page" id="pageone" data-theme="b">
+  <div data-role="header">
+    <h1><img src="images/helpdesk_logo.png" style="width:130px; height:auto;"></h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+  
+     <a href="index.html" class="ui-btn" rel="external">ΑΡΧΙΚΗ</a>
+	 <a href="#pagetwo" class="ui-btn">Καταγεγραμμένες βλάβες</a>
+  </div>
+
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>
+</div> 
+
+<div data-role="page" id="pagetwo" data-theme="b">
+  <div data-role="header">
+    <h1><img src="images/helpdesk_logo.png" style="width:130px; height:auto;"></h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p><h2>Καταγεγραμμένες βλάβες</h2></p>
+    <a href="index.html" class="ui-btn" rel="external">ΑΡΧΙΚΗ</a>
+  </div>
+  
+   
+   <script src="defects_android.json"></script>
+  <script>
+
+// search function for defects
+var result="empty";
+var needle_defect;
+function search_val_defect(){
+//needle_defect=document.getElementById("searchbox_manufact").value;
+
+var model = document.getElementById("model_text").value;
+var serial = document.getElementById("serial_text").value;
+var year = document.getElementById("year_text").value;
+
+var category_select = document.getElementById("defect_cats");
+var category = category_select.options[category_select.selectedIndex].value;
+
+
+var brand_select = document.getElementById("brands");
+var brand = brand_select.options[brand_select.selectedIndex].value;
+
+
+
+for (var i = 0; i < defects.length; i++){
+  // look for the entry with a matching `code` value
+  if (defects[i].brand==brand && defects[i].model==model && defects[i].engine_serial==serial && defects[i].defect_cat==category && defects[i].prod_year==year){
+ //alert(defects[i].description);
+  document.getElementById("result_defects").innerHTML="BΛΑΒΗ : "+defects[i].title+"<hr>ΑΙΤΙΑ : "+defects[i].cause+"<hr> ΛΥΣΗ : "+defects[i].description;
+ //result="BΛΑΒΗ : "+defects[i].title+"<hr>ΑΙΤΙΑ : "+defects[i].cause+"<hr> ΛΥΣΗ : "+defects[i].description;
+ //alert("FOUND");
+     // we found it
+    // obj[i].name is the matched result
+  }
+  else {
+  result="no match";
+  }
+}
+}
+
+// iterate over each element in the array
+
+</script>
+
+  
+<div data-role="main" class="ui-content" >
+<select name="brandId_manufact" id="brands" style="overflow:hidden;width:100%; padding:10px;" >
+<option value="">ΚΑΤΑΣΚΕΥΑΣΤΗΣ</option>
+<option value="ALFA ROMEO">ALFA ROMEO</option>
+<option value="AUDI">AUDI</option>
+<option value="BMW">BMW</option>
+<option value="CHEVROLET">CHEVROLET</option>
+<option value="CHEVROLET DAEWOO">CHEVROLET DAEWOO</option>
+<option value="CHRYSLER">CHRYSLER</option>
+<option value="CITROEN">CITROEN</option>
+<option value="DACIA">DACIA</option>
+<option value="DAIHATSU">DAIHATSU</option>
+<option value="FIAT">FIAT</option>
+<option value="FORD">FORD</option>
+<option value="HONDA">HONDA</option>
+<option value="HYUNDAI">HYUNDAI</option>
+<option value="ISUZU">ISUZU</option>
+<option value="JAGUAR">JAGUAR</option>
+<option value="JEEP">JEEP</option>
+<option value="KIA">KIA</option>
+<option value="LADA">LADA</option>
+<option value="LANCIA">LANCIA</option>
+<option value="LAND ROVER">LAND ROVER</option>
+<option value="LEXUS">LEXUS</option>
+<option value="MAZDA">MAZDA</option>
+<option value="MERCEDES BENZ">MERCEDES BENZ</option>
+<option value="MG">MG</option>
+<option value="MITSUBISHI">MITSUBISHI</option>
+<option value="NISSAN">NISSAN</option>
+<option value="OPEL">OPEL</option>
+<option value="PEUGEOT">PEUGEOT</option>
+<option value="RENAULT">RENAULT</option>
+<option value="ROVER">ROVER</option>
+<option value="SAAB">SAAB</option>
+<option value="SEAT">SEAT</option>
+<option value="SKODA">SKODA</option>
+<option value="SMART">SMART</option>
+<option value="SSANGYONG">SSANGYONG</option>
+<option value="SUBARU">SUBARU</option>
+<option value="SUZUKI">SUZUKI</option>
+<option value="TOYOTA">TOYOTA</option>
+<option value="VOLKSWAGEN">VOLKSWAGEN</option>
+<option value="VOLVO">VOLVO</option>
+<option value="ΜΙΝΙ">ΜΙΝΙ</option>
+</select>
+<input type ="text"  id="model_text" style="padding:10px; width:90%" class="myselect" placeholder="ΜΟΝΤΕΛΟ">
+<input type ="text"  id="year_text" style="padding:10px; width:90%" class="myselect" placeholder="ΕΤΟΣ ΠΑΡΑΓΩΓΗΣ">
+<input type ="text"  id="serial_text" style="padding:10px; width:90%" class="myselect" placeholder="ΚΩΔΙΚΟΣ ΚΙΝΗΤΗΡΑ">
+<select name="defect_cats" id="defect_cats" class="myselect">
+<option value="">Κατηγορία βλάβης</option>
+<option value="Κινητήρας">Κινητήρας</option>
+<option value="A/C">A/C</option>
+<option value="Αερόσακος">Αερόσακος</option>
+<option value="ABS">ABS</option>
+<option value="Immo">Immo</option>
+<option value="Body computer">Body computer</option>
+<option value="  Ηλεκτρικό τιμόνι">  Ηλεκτρικό τιμόνι</option>
+<option value="Όργανα">Όργανα</option>
+<option value="Σύστημα άνεσης">Σύστημα άνεσης</option>
+<option value="Ηλεκτρικό τιμόνι">Ηλεκτρικό τιμόνι</option>
+<option value="Ηλεκτρικό χειρόφρενο">Ηλεκτρικό χειρόφρενο</option>
+<option value="Αυτόματο κιβώτιο ταχυτήτων">Αυτόματο κιβώτιο ταχυτήτων</option>
+</select>
+<input type='button' value='ΑΝΑΖΗΤΗΣΗ' onclick='search_val_defect()'>
+
+
+<div style="background:#1A1A1A;margin-top:25px; height:400px;padding:5px;" id="defects_div">
+
+<div id="result_defects"  style="color:#FFF;font-family: 'Ubuntu Mono';">ΕΞΗΓΗΣΗ ΒΛΑΒΗΣ</div>
+
+</div>	
+
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>
+</div> 
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="text/html; width=device-width; initial-scale=1; charset=utf-8" http-equiv="Content-Type" >
+
+<!--
+<link rel="stylesheet" href="css/style_blue.css">
+<link rel="stylesheet" href="css/style_orange.css">
+<link rel="stylesheet" href="css/jquery_css.css">
+-->
+
+<link rel="stylesheet" href="css/style_blue.css">
+<script src="jquery-1.11.1.min.js"></script>
+<script src="jquery.mobile-1.4.4.min.js"></script>
+</head>
+<style type="text/css">
+body {
+    background: url(images/overlay1.png);
+    background-repeat:repeat-y;
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:100% 100%;
+}
+.ui-page {
+    background: transparent;
+}
+.ui-content{
+    background: transparent;
+}
+
+</style>
+<body>
+
+<div data-role="page" id="pageone" data-theme="b">
+  <div data-role="header">
+    <h1><img src="images/helpdesk_logo.png" style="width:130px; height:auto;"></h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    
+    <a href="index.html" class="ui-btn" rel="external">ΑΡΧΙΚΗ</a>
+	<a href="#eobd" class="ui-btn">Κωδικοί EOBD</a>
+	<a href="#manufact" class="ui-btn">Κωδικοί κατασκευαστή</a>
+  </div>
+
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>
+</div> 
+
+
+
+
+<div data-role="page" id="eobd" data-theme="b">
+  <div data-role="header">
+    <h1><img src="images/helpdesk_logo.png" style="width:130px; height:auto;"></h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p><h2>Κωδικοί EOBD</h2></p>
+       <a href="index.html" class="ui-btn" rel="external">ΑΡΧΙΚΗ</a>
+	<a href="#eobd" class="ui-btn">Κωδικοί EOBD</a>
+	<a href="#manufact" class="ui-btn">Κωδικοί κατασκευαστή</a>
+  </div>
+
+<div data-role="main" class="ui-content" >
+<form method="post" action="insert_eobd.php">				
+ <input type ="text"  style="padding:10px; width:90%" 
+ class="myselect" placeholder="Κωδικος EOBD : π.χ.(Pxxxx, Uxxxx)">
+
+<textarea name="eobd_description">Περιγραφή κωδικού βλάβης EOBD</textarea>
+
+
+
+<input type='submit' value='ΕΙΣΑΓΩΓΗ' >	
+</form>	
+			</div>
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>
+</div> 
+
+<div data-role="page" id="manufact" data-theme="b">
+  <div data-role="header">
+    <h1><img src="images/helpdesk_logo.png" style="width:130px; height:auto;"></h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+  
+
+
+    <p><h2>Κωδικοί κατασκευαστή</h2></p>
+        <a href="index.html" class="ui-btn" rel="external">ΑΡΧΙΚΗ</a>
+	<a href="#eobd" class="ui-btn">Κωδικοί EOBD</a>
+	<a href="#manufact" class="ui-btn">Κωδικοί κατασκευαστή</a>
+  </div>
+
+  <script src="codes_manufacturers.json"></script>
+<script>
+
+
+var needle_manufact;
+function search_val_manufact(){
+needle_manufact=document.getElementById("searchbox_manufact").value;
+
+var select_brand = document.getElementById("brands_manufact");
+var brand = select_brand.options[select_brand.selectedIndex].value;
+//alert(brand);
+for (var i = 0; i < codes_manufacturers.length; i++){
+  // look for the entry with a matching `code` value
+  if (codes_manufacturers[i].code == needle_manufact && codes_manufacturers[i].brand_id == brand){
+ 
+  document.getElementById("result_manufact").innerHTML=codes_manufacturers[i].description;
+ 
+     // we found it
+    // obj[i].name is the matched result
+  }
+}
+
+}
+// iterate over each element in the array
+
+</script>
+
+  
+
+  <div data-role="main" class="ui-content" >
+  
+<select name="brandId_manufact" id="brands_manufact" style="overflow:hidden;width:100%; padding:10px;" >
+<option value="">ΚΑΤΑΣΚΕΥΑΣΤΗΣ</option>
+<option value="2">ALFA ROMEO</option>
+<option value="1">AUDI</option>
+<option value="3">BMW</option>
+<option value="40">CHEVROLET</option>
+<option value="6">CHEVROLET DAEWOO</option>
+<option value="5">CHRYSLER</option>
+<option value="4">CITROEN</option>
+<option value="7">DACIA</option>
+<option value="8">DAIHATSU</option>
+<option value="10">FIAT</option>
+<option value="19">FORD</option>
+<option value="9">HONDA</option>
+<option value="11">HYUNDAI</option>
+<option value="41">ISUZU</option>
+<option value="42">JAGUAR</option>
+<option value="12">JEEP</option>
+<option value="13">KIA</option>
+<option value="15">LADA</option>
+<option value="16">LANCIA</option>
+<option value="20">LAND ROVER</option>
+<option value="43">LEXUS</option>
+<option value="21">MAZDA</option>
+<option value="25">MERCEDES BENZ</option>
+<option value="36">MG</option>
+<option value="38">MITSUBISHI</option>
+<option value="34">NISSAN</option>
+<option value="22">OPEL</option>
+<option value="35">PEUGEOT</option>
+<option value="33">RENAULT</option>
+<option value="30">ROVER</option>
+<option value="26">SAAB</option>
+<option value="31">SEAT</option>
+<option value="39">SKODA</option>
+<option value="27">SMART</option>
+<option value="28">SSANGYONG</option>
+<option value="24">SUBARU</option>
+<option value="23">SUZUKI</option>
+<option value="18">TOYOTA</option>
+<option value="17">VOLKSWAGEN</option>
+<option value="32">VOLVO</option>
+<option value="37">ΜΙΝΙ</option>
+</select>
+
+				 
+
+ <br>
+ <input type ="text" onkeyup="search_val_manufact()" id="searchbox_manufact" style="padding:10px; width:90%" class="myselect" placeholder="Κωδικος Κατασκευαστή :">
+<div style="background:#1A1A1A;margin-top:25px; height:400px;padding:5px;" id="codes_div">
+
+<div id="result_manufact"  style="color:#FFF;font-family: 'Ubuntu Mono';">Περιγραφή κωδικού βλάβης κατασκευαστή</div>
+
+</div>		
+				</div>
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>
+</div> 
+</body>
+</html>

@@ -1,0 +1,248 @@
+
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Autosupport</title>
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700&subset=latin,greek-ext' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Plaster' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Sarpanch:400,900' rel='stylesheet' type='text/css'>
+		
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+	
+		<script src="js/jquery.min.js"></script>
+		
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+       
+	
+	
+		
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		
+	 
+	</head>
+	<body >
+
+		<!-- Header -->
+			
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover" style="padding-top:0px;">
+						<div class="container" style="height:200px;">
+						
+						
+<div style="text-align:justify; width:100%; line-height:1.6em; margin-bottom:10px;font-size:2vw">
+<ul>
+								
+<li class="rollblue"><a  href="#defects" id="defects-link" class="skel-layers-ignoreHref" ><span class="menuspan" style="display: block;">Καταγεγραμμένες βλάβες</span></a></li>
+<li class="rollblue"><a  href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref" ><span  class="menuspan" style="display: block; ">Κωδικοί EOBD</span></a></li>
+<li class="rollblue"><a  href="#about" id="about-link" class="skel-layers-ignoreHref" ><span class="menuspan" style="display: block;">Κωδικοί κατασκευαστών</span></a></li>
+							  
+			
+	 </ul>
+
+</div>
+
+						
+							
+							
+
+						</div>
+						
+					</section>
+					
+				<!-- Portfolio -->
+                
+                
+                <!-- defects -->
+					<section id="defects" class="two" style=" height:100%; overflow:visible">
+                
+						<div class="container" id="defects" style="height:100%;">
+						
+						
+						
+
+							<header>
+								<h2><font style="font-size:2em">Β</font>λάβες</h2>
+							</header>
+
+						<!--	<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>-->
+				
+							<div style=" margin:10px;">
+					
+
+				<div  style="height:100vh;">
+				<h2><a href="login_user.php">test</a></h2>
+				</div>
+
+				
+				
+
+
+				
+				<!-- One -->
+				
+							<form action="#" method="post" id="defects_search">
+									<div class="row half collapse-at-2">
+									
+										
+										<input type="hidden" name="fubar1"  value="fubar"/>
+										
+										
+										
+										<!--	<select class="myselect" id="modelHint" name="engine_serial">
+  <option value="0">ΚΩΔ. ΚΙΝΗΤΗΡΑ</option>
+
+</select> -->
+										
+										
+										
+										<input type="submit" class="special" value="Ευρεση" name="search_defects_button" />
+										<input type="submit" class="special" value="Καθάρισμα" name="clear_form" />
+									</div>		
+									
+								
+									
+										
+								</form>
+								
+					
+								
+											
+</div>
+
+						</div>
+					</section>
+					
+					
+					<section id="portfolio" class="two">
+						<div class="container">
+
+							<header>
+								<h2><font style="font-size:2em">Κ</font>ωδικοί EOBD</h2>
+							</header>
+							<script src="eobd_data.json">
+							</script>
+<script>
+var obj = [
+  {"name": "Afghanistan", "code": "AF"}, 
+  {"name": "Åland Islands", "code": "AX"}, 
+  {"name": "Albania", "code": "AL"}, 
+  {"name": "Algeria", "code": "DZ"}
+];
+
+var needle;
+function search_val(){
+needle=document.getElementById("searchbox").value;
+
+
+for (var i = 0; i < eobd_data.length; i++){
+  // look for the entry with a matching `code` value
+  if (eobd_data[i].code == needle){
+  document.getElementById("result").innerHTML=eobd_data[i].description;
+ 
+     // we found it
+    // obj[i].name is the matched result
+  }
+}
+
+}
+// iterate over each element in the array
+
+</script>
+						<!--	<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>-->
+							
+							<div >
+
+	
+
+				<div  >
+				Κωδικος EOBD : 
+
+ π.χ.(
+ Pxxxx, 
+ Uxxxx)
+ <br>
+ <input type ="text" onkeyup="search_val()" id="searchbox" style="padding:10px; width:90%" class="myselect">
+
+				</div>
+
+					
+	<div style="background:#1A1A1A;margin-top:25px; height:400px;padding:5px;" id="codes_div">
+
+<div id="result"  style="color:#FFF;font-family: 'Ubuntu Mono';">Περιγραφή κωδικού βλάβης EOBD</div>
+
+</div>						
+
+	</div>	
+	
+
+
+
+						</div>
+					</section>
+					
+		
+					
+			
+			
+			
+			<section id="about" class="two">
+						<div class="container">
+
+							<header>
+								<h2><font style="font-size:2em">Κ</font>ΩΔΙΚΟΙ ΚΑΤΑΣΚΕΥΑΣΤΗ</h2>
+							</header>
+
+						<!--	<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>-->
+							
+		<div >
+		
+
+				<div  style="height:100vh;">
+				<h2><a href="login_user.php">Πρέπει να συνδεθείτε στο σύστημα</a></h2>
+				</div>
+
+				
+
+<input type="text" name="manufacturer_code" value="Kωδικος κατασκευαστη :" onClick="this.select();" onkeyup="showHint_man(this.value)" style="padding:10px; width:100%" class="myselect">
+	</div>	
+
+<div style="background:#1A1A1A;margin-top:25px; height:400px; padding:5px;"id="codes_div">
+
+<div id="txtHint_codes_brands" class="shadow" style="color:#FFF">Περιγραφή κωδικού βλάβης κατασκευαστή</div>
+
+
+</div>
+	
+
+
+
+						</div>
+					</section>
+				
+	
+
+	
+			</div>
+
+	
+		
+
+	</body>
+</html>
+
+
